@@ -4,11 +4,12 @@
 
     <application
         android:allowBackup="true"
+        android:debuggable="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".MainActivity"
+            android:name=".LoginAct"
             android:label="@string/name1" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -32,7 +33,14 @@
             android:name=".information"
             android:label="@string/name5" >
         </activity>
-        
+        <activity
+            android:name=".RegisterAct"
+            android:label="@string/title_activity_register" >
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main" >
+        </activity>
     </application>
 
 </manifest>
